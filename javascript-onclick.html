@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <p class="name"> This is the text where color change when button clcik</p>
+        <button onclick="changeColor('blue')">Blue Text</button>
+        <button onclick="changeColor('red')">Red Text</button>
+        <button onclick="changeColor('lime')">Lime Text</button>
+        <script>
+            //const para = document.querySelector('.name').style.color="red";
+            const para = document.querySelector('.name');
+            function changeColor(color){
+                para.style.color=color;
+            }
+        </script>        
+
+    </body>
+</html>
