@@ -15,4 +15,5 @@ if(num > 1){
     console.log('The number is Negative');
 } else{
     console.log('The number is Zero');
+
 }

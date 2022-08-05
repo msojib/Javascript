@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let number = 11; 
+        let isPrime = true;
+        for(let i = 2; i <= number-1; i++){
+            if(number % i === 0){
+                isPrime = false;
+                break;
+            } 
+        }
+
+        if(isPrime){
+            console.log('This is prime')
+        } else {
+            console.log('This is not prime');
+        }
+
+        //find the all prime number between 10-25
+
+        for( let num = 10; num <= 25; num++ ){
+            let isPrime = true;
+            for(let i = 2; i <= num-1; i++){
+                if(num % i === 0){
+                    isPrime = false;
+                    break;
+                } 
+            }
+
+            if(isPrime){
+                console.log(`Prime number is ${num}`);
+            } 
+        }
+
+    </script>
+</body>
+</html>

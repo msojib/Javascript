@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd/Even Javascript</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //find odd/even number form 1-10
+
+        //process 1
+        for(let index = 1; index <= 10; index++){
+            if( index % 2 ===1){
+                console.log(`${index} is odd number`);
+            } else {
+                console.log(`${index} is even number`);
+            }
+        }
+        //using two loop
+        for(let index = 1; index <= 10; index+=2){            
+            console.log(`${index} is odd number`);            
+        }
+
+        for(let index = 2; index <= 10; index+=2){            
+            console.log(`${index} is even number`);            
+        }
+    </script>
+</body>
+</html>
